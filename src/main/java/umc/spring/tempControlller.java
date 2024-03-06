@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/temp")
 public class tempControlller {
 
-    @PostMapping("/success")
+    @GetMapping("/success")
     public BaseResponse<String> successResponseAPI() {
         return BaseResponse.onSuccess("응답 성공");
     }
